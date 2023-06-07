@@ -1,0 +1,69 @@
+/*Main*/
+.introducao-bg{
+  background: var(--cor--12) url('../../img/dec/bottom-left.svg') no-repeat bottom 140px left 20px; /*Adicionar img por cima da cor*/
+  color: var(--cor--0);
+  box-shadow: inset 0px -120px var(--cor--0),inset 0px -120px var(--cor--0); /*Irá fazer a ilusão fazendo parecer que a imagem está vazando*/
+}
+
+.introducao{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px 40px;
+}
+
+.introducao-conteudo{
+  align-self: end;
+  padding-bottom: 200px;
+}
+
+
+.introducao img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /*Não deixa a imagem esmagada, faz com que o redimensionamento fique adequado indepedenente do seu tamanho*/
+  border-radius: 4px;
+}
+
+.introducao h1{
+  margin-bottom: 32px;
+}
+
+.introducao p{
+  margin-bottom: 20px; 
+}
+
+@media(max-width:1200px){
+  .introducao h1{
+    font-size: 48px; /* Mudar tamanho da fonte do h1 para não haver quebra de linha*/
+  }
+
+  .introducao p {
+    font-size: 18px;
+  }
+}
+
+@media(max-width:800px){
+  .introducao-bg{
+    background-color: var(--cor--11);
+    padding-top: 40px;
+    box-shadow: inset 0 -60px  var(--cor--0);
+  }
+
+  .introducao{
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .introducao-conteudo{
+    padding-bottom: 0px;
+  }
+
+  .introducao h1{
+    margin-bottom: 16px;
+  }
+
+  .introducao img{
+    height: 300px;
+    width: 100%;
+  }
+}

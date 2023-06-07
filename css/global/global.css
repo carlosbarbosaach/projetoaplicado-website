@@ -1,0 +1,38 @@
+/*Algumas alterações para resetar o layout padrão do navegador*/
+body{
+  margin: 0px;
+  color: var(--cor--11);
+  font-family: Arial, Helvetica, sans-serif;
+  /* height: 2000px; */
+}
+
+h1,
+h2,
+h3,
+h4,
+ul,
+p,
+blockquote,
+dd {
+  margin: 0px;
+}
+
+ul{
+  padding: 0px;
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: inherit; /*Herdar a cor do pai*/
+}
+
+img{
+  max-width: 100%;
+  display: block;
+}
+
+/*Tudo que tiver src e terminar com jpg adicionar este estilo*/
+img[src$=".jpg"]{
+  border-radius: 4px;
+}
