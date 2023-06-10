@@ -97,6 +97,10 @@
 }
 
 @media(max-width: 800px){
+  .bicicleta {
+    grid-template-columns: 1fr;
+  }
+  
   .bicicletas{
     grid-template-columns: 1fr;
     padding-top: 40px;
@@ -109,6 +113,10 @@
 }
 
 @media(max-width: 400px){
+  .bicicleta {
+    grid-template-columns: 1fr;
+  }
+
   .bicicleta-informacoes{ 
     grid-template-columns: 1fr;
   }

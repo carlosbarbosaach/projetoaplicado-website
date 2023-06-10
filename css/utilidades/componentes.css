@@ -82,7 +82,7 @@
 
 /*Titulo paginas internas*/
 .titulo-bg{
-  padding-top: 60px;
+  padding-top: 120px;
   padding-bottom: 60px;
   background-color: var(--cor--11);
 }
@@ -97,7 +97,7 @@
 
 @media(max-width: 800px){
   .titulo-bg{
-    padding-top: 40px;
+    padding-top: 120px;
     padding-bottom: 40px;
   }
 
@@ -105,5 +105,9 @@
     font-size: 1rem;
     text-transform: lowercase;
     font-weight: 400;
+  }
+
+  .titulo h1 {
+    width: 50px;
   }
 }

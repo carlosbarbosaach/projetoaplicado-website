@@ -20,6 +20,7 @@
     rel="stylesheet">
   <title>Contato | BikeMania</title>
   <link rel="icon" href="./img/icones/favicon.png">
+  <script type="text/javascript" src="./script.js" defer></script>
   <script>
     document.documentElement.classList.add('js');
   </script>
@@ -28,16 +29,22 @@
 <body id="contato">
   <header class="header-bg">
     <div class="header-container container">
-      <a href="./">
+      <a href="/">
         <p class="header-logo">BikeMania</p>
       </a>
       <!--Navegação primária do site-->
-      <nav aria-label="primaria">
-        <ul class="header-menu font-1-m cor-0">
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn cor-0" onclick="closeNav()">&times;</a>
+        
+        <ul class="overlay-content font-1-m cor-0">
           <li><a href="./bicicletas.html">Bicicletas</a></li>
           <li><a href="./contato.html">Contato</a></li>
         </ul>
-      </nav>
+        
+      </div>
+      <button class="nav-button" onclick="openNav()">
+        <i class="fa-solid fa-bars fa-2x"></i>
+      </button>
     </div>
   </header>
 
@@ -141,15 +148,15 @@
           <li>Florianopolis - SC</li>
         </ul>
         <div class="footer-redes">
-          <a href="./">
+          <a href="https://www.instagram.com/" target="_blank">
             <img src="./img/redes/instagram.svg" class="img-icone" alt="Instagram">
           </a>
 
-          <a href="./">
+          <a href="https://www.facebook.com/" target="_blank">
             <img src="./img/redes/facebook.svg" class="img-icone" alt="Facebook">
           </a>
 
-          <a href="./">
+          <a href="https://www.youtube.com/" target="_blank">
             <img src="./img/redes/youtube.svg" class="img-icone" alt="Youtube">
           </a>
         </div>

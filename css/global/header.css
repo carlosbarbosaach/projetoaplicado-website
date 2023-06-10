@@ -1,5 +1,7 @@
 .header-bg{
   background-color: var(--cor--12);
+  position: fixed;
+  width: 100%;
 }
 
 .header-logo {
@@ -73,5 +75,71 @@
   .header-menu a{
     padding: 8px 12px;
     font-size: 14px;
+  }
+}
+
+.nav-button {
+  border: 0;
+  border-radius: 4px;
+  padding: 8px;
+  background-color: #0065b5;
+  margin: 8px;
+  cursor: pointer;
+}
+
+.nav-button i {
+  color: #FFF;
+}
+
+.overlay {
+  width: 0;
+  height: 100%;
+  background-color: rgba(0,0,0, 0.9);
+  z-index: 9;
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow-x: hidden;
+  transition: all 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  color: #818181;
+  transition: 0.3s;
+}
+
+.overlay li {
+  padding-bottom: 10px;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 25px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-width: 450px) {
+  .overlay a {
+    font-size: 36px;
+    color: #f1f1f1
+  }
+  .overlay li {
+    padding-bottom: 20px;
+  }
+  .overlay a:hover, .overlay a:focus {
+    color: #818181;
   }
 }
