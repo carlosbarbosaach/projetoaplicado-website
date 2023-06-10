@@ -16,6 +16,48 @@ function bikeSpeed() {
             speedIncrease.innerHTML = increase
             increase++
         }
-    }, 30)
+    }, 40)
 }
 bikeSpeed();
+
+function textMotor() {
+    let motor = document.getElementById('motor').innerHTML;
+    const motorIncrease = document.getElementById('motor');
+    motorIncrease.innerHTML = '';
+    let count = 0
+    setInterval(() => {
+        if (count < motor.length) {
+            motorIncrease.innerHTML = motor.slice(0, count)
+            count++
+        }
+    }, 50)
+}
+textMotor();
+
+function textSpeed() {
+    let speed = document.getElementById('speed').innerHTML;
+    const speedIncrease = document.getElementById('speed');
+    speedIncrease.innerHTML = '';
+    let count = 0
+    setInterval(() => {
+        if (count < speed.length) {
+            speedIncrease.innerHTML = speed.slice(0, count)
+            count++
+        }
+    }, 60)
+}
+textSpeed();
+
+function textQuadro() {
+    let quadro = document.getElementById('quadro').innerHTML;
+    const quadroIncrease = document.getElementById('quadro');
+    quadroIncrease.innerHTML = '';
+    let count = 0
+    setInterval(() => {
+        if (count < quadro.length) {
+            quadroIncrease.innerHTML = quadro.slice(0, count)
+            count++
+        }
+    }, 70)
+}
+textQuadro();
