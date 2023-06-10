@@ -116,6 +116,10 @@
   transition: 0.3s;
 }
 
+.font-1-m {
+  font-size: 2rem !important;
+}
+
 .overlay li {
   padding-bottom: 10px;
 }
